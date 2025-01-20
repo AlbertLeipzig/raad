@@ -1,0 +1,10 @@
+@use "colors" as *;
+@use "fontFaces" as *;
+
+@mixin baseFont {
+  @include fontFace;
+  font-size: 2.1rem;
+  color: $neutralLight;
+  line-height: 1.7em;
+  max-width: 75ch;
+}

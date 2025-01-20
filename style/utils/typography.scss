@@ -1,0 +1,36 @@
+@use "colors" as *;
+@use "fontFaces" as *;
+@use "mixins" as *;
+
+h1 {
+  @include fontFace;
+  color: $neutralLight;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+h2 {
+  @include fontFace;
+  color: $neutralMedium-light;
+  font-size: 4.1rem;
+}
+
+h3 {
+  @include fontFace;
+  color: $neutralMedium-light;
+  font-size: 4.1rem;
+}
+
+h4 {
+  @include fontFace;
+  color: $neutralDark;
+  font-size: 2.3rem;
+}
+
+p {
+  @include baseFont;
+}
+
+li {
+  @include baseFont;
+}

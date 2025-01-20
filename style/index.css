@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
 html,
 body,
 div,
@@ -129,8 +130,92 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 :root {
   font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(50, 100%, 98%);
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(50, 2%, 49%);
+  font-size: 4.1rem;
+}
+
+h3 {
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(50, 2%, 49%);
+  font-size: 4.1rem;
+}
+
+h4 {
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(174, 75%, 8%);
+  font-size: 2.3rem;
+}
+
+p {
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.1rem;
+  color: hsl(50, 100%, 98%);
+  line-height: 1.7em;
+  max-width: 75ch;
+}
+
+li {
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.1rem;
+  color: hsl(50, 100%, 98%);
+  line-height: 1.7em;
+  max-width: 75ch;
+}
+
+.icon {
+  width: 20px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 3vw;
+}
+
+.header__branding {
+  display: flex;
+  align-items: center;
+}
+.header__branding img {
+  width: 150px;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=index.css.map */
