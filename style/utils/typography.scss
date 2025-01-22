@@ -6,7 +6,9 @@ h1 {
   @include fontFace;
   color: $neutralLight;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 3.3rem;
+  max-width: 15ch;
+  margin-bottom: 2vh;
 }
 
 h2 {

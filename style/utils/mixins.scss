@@ -3,15 +3,16 @@
 
 @mixin baseFont {
   @include fontFace;
-  font-size: 2.1rem;
+  font-size: 1.1rem;
   color: $neutralLight;
   line-height: 1.7em;
   max-width: 75ch;
   letter-spacing: 0.1em;
 }
 
-@mixin page {
+@mixin page ($backgroundColor : $neutralDark) {
   min-height: 100vh;
+  background-color : $backgroundColor;
 }
 
 @mixin button($mainColor: $neutralDark, $secondaryColor : $neutralLight) {

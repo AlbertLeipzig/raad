@@ -1,8 +1,31 @@
+@use "sass:map";
+@use "../utils/baseValues" as *;
 @use "../utils/colors" as *;
 @use "../utils/mixins" as *;
 .section {
   &__hero {
     @include page;
+    display: grid;
+    grid-template-areas: "content";
+    place-items: center;
+    video {
+      grid-area: content;
+    }
+
+    div {
+      grid-area: content;
+      padding: 0 3vw;
+      position: relative;
+      bottom: 5vh;
+      p {
+        margin-bottom: 7.5vh;
+        line-height: 1.4em;
+        max-width: 75%;
+      }
+      a {
+        @include button;
+      }
+    }
   }
   &__claim {
     @include page;
@@ -14,8 +37,26 @@
     @include page;
   }
   &__facts {
-    @include page;
-    background-color: hsl(283, 24%, 23%);
+    svg {
+      display: none;
+      @media screen and (width > map.get($breakpoints, "tablet")) {
+        display: block;
+      }
+    }
+    div {
+      @include page(hsl(283, 24%, 23%));
+      &:nth-of-type(1) {
+        padding-top: 50vh;
+        p {
+          text-align: center;
+        }
+        h2 {
+          font-size: 3rem;
+          color: $neutralLight;
+          text-align: center;
+        }
+      }
+    }
   }
   &__call-schedule {
     @include page;
