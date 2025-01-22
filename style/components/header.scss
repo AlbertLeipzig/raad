@@ -1,15 +1,21 @@
 header {
+  position: fixed;
+  inset: 0 0 auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3vh 3vw;
+  nav ul {
+    display: flex;
+    gap: 1vw;
+  }
 }
 
 .header {
   &__branding {
     display: flex;
     align-items: center;
-    img {
+    svg {
       width: 150px;
       aspect-ratio: 1;
       object-fit: cover;

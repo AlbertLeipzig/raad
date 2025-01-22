@@ -202,20 +202,51 @@ li {
 }
 
 header {
+  position: fixed;
+  inset: 0 0 auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3vh 3vw;
+}
+header nav ul {
+  display: flex;
+  gap: 1vw;
 }
 
 .header__branding {
   display: flex;
   align-items: center;
 }
-.header__branding img {
+.header__branding svg {
   width: 150px;
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.section__hero {
+  min-height: 100vh;
+}
+.section__claim {
+  min-height: 100vh;
+}
+.section__cta {
+  min-height: 100vh;
+}
+.section__use-case-scenarios {
+  min-height: 100vh;
+}
+.section__facts {
+  min-height: 100vh;
+}
+.section__call-schedule {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=index.css.map */

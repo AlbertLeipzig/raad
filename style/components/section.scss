@@ -1,0 +1,21 @@
+@use "../utils/mixins" as *;
+.section {
+  &__hero {
+    @include page;
+  }
+  &__claim {
+    @include page;
+  }
+  &__cta {
+    @include page;
+  }
+  &__use-case-scenarios {
+    @include page;
+  }
+  &__facts {
+    @include page;
+  }
+  &__call-schedule {
+    @include page;
+  }
+}

@@ -8,3 +8,7 @@
   line-height: 1.7em;
   max-width: 75ch;
 }
+
+@mixin page {
+  min-height: 100vh;
+}
