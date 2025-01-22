@@ -1,0 +1,21 @@
+@use "../utils/colors" as *;
+
+footer {
+  position: sticky;
+  background-color: hsl(180, 11%, 7%);
+  display: flex;
+  align-items: center;
+  padding: 2vh 3vw;
+  a {
+    margin: 0 1ch;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+  }
+  p {
+    flex-grow: 2;
+    text-align: right;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    color : $neutralLight--transparent;
+  }
+}

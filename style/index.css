@@ -183,6 +183,23 @@ p {
   color: hsl(50, 100%, 98%);
   line-height: 1.7em;
   max-width: 75ch;
+  letter-spacing: 0.1em;
+}
+
+a {
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.1rem;
+  color: hsl(50, 100%, 98%);
+  line-height: 1.7em;
+  max-width: 75ch;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+  color: hsl(50, 100%, 98%);
+}
+a:visited {
+  color: hsl(50, 100%, 98%);
 }
 
 li {
@@ -193,12 +210,27 @@ li {
   color: hsl(50, 100%, 98%);
   line-height: 1.7em;
   max-width: 75ch;
+  letter-spacing: 0.1em;
 }
 
-.icon {
-  width: 20px;
-  aspect-ratio: 1;
-  object-fit: cover;
+footer {
+  position: sticky;
+  background-color: hsl(180, 11%, 7%);
+  display: flex;
+  align-items: center;
+  padding: 2vh 3vw;
+}
+footer a {
+  margin: 0 1ch;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+footer p {
+  flex-grow: 2;
+  text-align: right;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  color: hsla(50, 100%, 98%, 0.25);
 }
 
 header {
@@ -207,27 +239,48 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3vh 3vw;
+  padding: 1.1vh 3vw;
 }
 header nav ul {
   display: flex;
   gap: 1vw;
 }
+header nav ul li:nth-child(1) {
+  display: none;
+}
+@media screen and (width > 800px) {
+  header nav ul li:nth-child(1) {
+    display: block;
+  }
+}
+header nav ul li a {
+  background-color: hsl(50, 100%, 98%);
+  border-radius: 100px;
+  border: hsl(50, 100%, 98%);
+  padding: 1.15em 2em;
+  color: hsl(173, 73%, 19%);
+}
+header nav ul li a:visited {
+  color: hsl(173, 73%, 19%);
+}
 
 .header__branding {
   display: flex;
   align-items: center;
+  font-size: 1.8rem;
 }
 .header__branding svg {
-  width: 150px;
+  width: 37px;
   aspect-ratio: 1;
   object-fit: cover;
+  height: fit-content;
+  margin-right: 3.5px;
 }
 
-video {
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
+.icon {
+  width: 20px;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .section__hero {
@@ -244,9 +297,33 @@ video {
 }
 .section__facts {
   min-height: 100vh;
+  background-color: hsl(283, 24%, 23%);
 }
 .section__call-schedule {
   min-height: 100vh;
+  background-color: hsl(180, 11%, 7%);
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+.section__call-schedule p {
+  font-size: 1.1rem;
+  margin: 8vh 0 1.5vh;
+}
+.section__call-schedule h2 {
+  color: hsl(50, 100%, 98%);
+  font-size: 3.3rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+/* svg {
+  max-width: 100vw;
+} */
+video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

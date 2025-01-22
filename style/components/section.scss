@@ -1,3 +1,4 @@
+@use "../utils/colors" as *;
 @use "../utils/mixins" as *;
 .section {
   &__hero {
@@ -14,8 +15,23 @@
   }
   &__facts {
     @include page;
+    background-color: hsl(283, 24%, 23%);
   }
   &__call-schedule {
     @include page;
+    background-color: hsl(180, 11%, 7%);
+    place-items: center;
+    align-content: center;
+    text-align: center;
+    p {
+      font-size: 1.1rem;
+      margin: 8vh 0 1.5vh;
+    }
+    h2 {
+      color: $neutralLight;
+      font-size: 3.3rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+    }
   }
 }

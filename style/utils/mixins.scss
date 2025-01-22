@@ -7,8 +7,20 @@
   color: $neutralLight;
   line-height: 1.7em;
   max-width: 75ch;
+  letter-spacing: 0.1em;
 }
 
 @mixin page {
   min-height: 100vh;
+}
+
+@mixin button($mainColor: $neutralDark, $secondaryColor : $neutralLight) {
+  background-color: $secondaryColor;
+  border-radius: 100px;
+  border: $secondaryColor;
+  padding: 1.15em 2em;
+  color : $mainColor;
+  &:visited {
+    color : $mainColor;
+  }
 }

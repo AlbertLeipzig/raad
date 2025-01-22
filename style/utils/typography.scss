@@ -31,6 +31,16 @@ p {
   @include baseFont;
 }
 
+a {
+  @include baseFont;
+  font-size: 1.1rem;
+  
+  color: $neutralLight;
+  &:visited {
+    color: $neutralLight;
+  }
+}
+
 li {
   @include baseFont;
 }
