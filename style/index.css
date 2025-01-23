@@ -328,28 +328,62 @@ header nav ul li a:visited {
   min-height: 100vh;
   background-color: hsl(174, 75%, 8%);
 }
-.section__facts svg {
-  display: none;
+.section__facts {
+  background-color: hsl(283, 24%, 23%);
+  padding: 0;
 }
-@media screen and (width > 800px) {
-  .section__facts svg {
-    display: block;
-  }
+.section__facts svg {
+  /* display: none; */
+  position: sticky;
+  display: block;
+  margin: 0 auto;
+  padding: 60% 0 5vh;
+  top: 0; /* @media screen and (width > map.get($breakpoints, "tablet")) {
+  display: block;
+} */
+}
+.section__facts-text {
+  /* position: relative;
+  top: -40vh; */
 }
 .section__facts div {
-  min-height: 100vh;
-  background-color: hsl(283, 24%, 23%);
+  /* @include page(hsl(283, 24%, 23%)); */
+  /* &:nth-of-type(1) {
+
+  } */
 }
-.section__facts div:nth-of-type(1) {
-  padding-top: 50vh;
+.section__facts div:first-child {
+  margin-bottom: 90vh;
 }
-.section__facts div:nth-of-type(1) p {
+.section__facts div:first-child p {
   text-align: center;
 }
-.section__facts div:nth-of-type(1) h2 {
+.section__facts div:first-child h2 {
   font-size: 3rem;
   color: hsl(50, 100%, 98%);
   text-align: center;
+}
+.section__facts div:nth-child(3) {
+  margin-top: 40vh;
+}
+.section__facts-single-fact {
+  padding: 3vh 3vw;
+}
+.section__facts-single-fact p:nth-of-type(1) {
+  font-size: 8rem;
+  text-align: center;
+  letter-spacing: 0;
+}
+.section__facts-single-fact p:nth-of-type(1) span {
+  font-size: 3rem;
+}
+.section__facts-single-fact p:nth-of-type(2) {
+  font-size: 1.5rem;
+  line-height: 1.1em;
+  margin: 20vh 0 3vh;
+}
+.section__facts-single-fact p:nth-of-type(3) span {
+  color: hsla(50, 100%, 98%, 0.25);
 }
 .section__call-schedule {
   min-height: 100vh;

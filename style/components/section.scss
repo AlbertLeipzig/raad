@@ -37,16 +37,25 @@
     @include page;
   }
   &__facts {
+    background-color: hsl(283, 24%, 23%);
+    padding: 0;
     svg {
-      display: none;
-      @media screen and (width > map.get($breakpoints, "tablet")) {
+      /* display: none; */
+      position: sticky;
+      display: block;
+      margin: 0 auto;
+      padding: 60% 0 5vh;
+      top: 0; /* @media screen and (width > map.get($breakpoints, "tablet")) {
         display: block;
-      }
+      } */
+    }
+    &-text {
+      /* position: relative;
+      top: -40vh; */
     }
     div {
-      @include page(hsl(283, 24%, 23%));
-      &:nth-of-type(1) {
-        padding-top: 50vh;
+      &:first-child {
+        margin-bottom: 90vh;
         p {
           text-align: center;
         }
@@ -54,6 +63,41 @@
           font-size: 3rem;
           color: $neutralLight;
           text-align: center;
+        }
+      }
+      &:nth-child(2) {
+        
+      }
+      &:nth-child(3) {
+        margin-top: 40vh;
+      }
+      /* @include page(hsl(283, 24%, 23%)); */
+
+      /* &:nth-of-type(1) {
+        
+      } */
+    }
+    &-single-fact {
+      padding: 3vh 3vw;
+      
+      p {
+        &:nth-of-type(1) {
+          font-size: 8rem;
+          text-align: center;
+          letter-spacing: 0;
+          span {
+            font-size: 3rem;
+          }
+        }
+        &:nth-of-type(2) {
+          font-size: 1.5rem;
+          line-height: 1.1em;
+          margin: 20vh 0 3vh;
+        }
+        &:nth-of-type(3) {
+          span {
+            color: $neutralLight--transparent;
+          }
         }
       }
     }
