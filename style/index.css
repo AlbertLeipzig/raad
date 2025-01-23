@@ -173,8 +173,20 @@ h4 {
   font-family: "Sofia Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: hsl(174, 75%, 8%);
-  font-size: 2.3rem;
+  background-color: hsl(50, 100%, 98%);
+  border-radius: 100px;
+  border: hsl(50, 100%, 98%);
+  padding: 1.15em 2em;
+  color: hsl(173, 73%, 19%);
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  background: none;
+  font-size: 1.3rem;
+  line-height: 1em;
+}
+h4:visited {
+  color: hsl(173, 73%, 19%);
 }
 
 p {
@@ -261,6 +273,8 @@ header nav ul li a {
   border: hsl(50, 100%, 98%);
   padding: 1.15em 2em;
   color: hsl(173, 73%, 19%);
+  height: fit-content;
+  width: fit-content;
 }
 header nav ul li a:visited {
   color: hsl(173, 73%, 19%);
@@ -312,6 +326,8 @@ header nav ul li a:visited {
   border: hsl(50, 100%, 98%);
   padding: 1.15em 2em;
   color: hsl(174, 75%, 8%);
+  height: fit-content;
+  width: fit-content;
 }
 .section__hero div a:visited {
   color: hsl(174, 75%, 8%);
@@ -319,6 +335,18 @@ header nav ul li a:visited {
 .section__claim {
   min-height: 100vh;
   background-color: hsl(174, 75%, 8%);
+  background-color: hsl(50, 100%, 98%);
+}
+.section__claim h2 {
+  display: block;
+  margin: 15vh auto;
+  font-size: 2.4rem;
+  max-width: 21ch;
+  text-align: center;
+  line-height: 1.1em;
+}
+.section__claim h2 span {
+  color: hsl(16, 97%, 50%);
 }
 .section__cta {
   min-height: 100vh;
@@ -333,24 +361,11 @@ header nav ul li a:visited {
   padding: 0;
 }
 .section__facts svg {
-  /* display: none; */
   position: sticky;
   display: block;
   margin: 0 auto;
   padding: 60% 0 5vh;
-  top: 0; /* @media screen and (width > map.get($breakpoints, "tablet")) {
-  display: block;
-} */
-}
-.section__facts-text {
-  /* position: relative;
-  top: -40vh; */
-}
-.section__facts div {
-  /* @include page(hsl(283, 24%, 23%)); */
-  /* &:nth-of-type(1) {
-
-  } */
+  top: 0;
 }
 .section__facts div:first-child {
   margin-bottom: 90vh;
@@ -384,6 +399,80 @@ header nav ul li a:visited {
 }
 .section__facts-single-fact p:nth-of-type(3) span {
   color: hsla(50, 100%, 98%, 0.25);
+}
+.section__features-single-feature {
+  padding: 0 3vw;
+  margin: 6vh 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "number title" "description description" "image image" "list list" "cta cta";
+}
+.section__features-single-feature-image {
+  grid-area: image;
+}
+.section__features h3 {
+  grid-area: title;
+  font-size: 2.5rem;
+  align-self: center;
+  line-height: 1.3em;
+  margin-left: 5vw;
+}
+.section__features h3 span {
+  color: hsl(173, 56%, 23%);
+}
+.section__features p {
+  grid-area: description;
+  color: hsl(40, 2%, 32%);
+  font-size: 1.4rem;
+  max-width: 40ch;
+  line-height: 1.3em;
+  margin: 3vh 0;
+}
+.section__features ul {
+  grid-area: list;
+}
+.section__features ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 5vw;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+.section__features ul li p {
+  max-width: 60%;
+}
+.section__features ul li h4 {
+  padding: 0.5em 1.2em;
+  flex-grow: 1;
+}
+.section__features a {
+  grid-area: cta;
+  /* background-color : red; */
+  background-color: hsl(173, 56%, 23%);
+  border-radius: 100px;
+  border: hsl(173, 56%, 23%);
+  padding: 1.15em 2em;
+  color: hsl(50, 100%, 98%);
+  height: fit-content;
+  width: fit-content;
+  margin-top: 4vh;
+}
+.section__features a:visited {
+  color: hsl(50, 100%, 98%);
+}
+.section__features-number {
+  grid-area: number;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "content";
+}
+.section__features-number p {
+  grid-area: content;
+  color: hsl(173, 56%, 23%);
+}
+.section__features-number svg {
+  grid-area: content;
 }
 .section__call-schedule {
   min-height: 100vh;

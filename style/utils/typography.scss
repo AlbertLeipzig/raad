@@ -25,8 +25,11 @@ h3 {
 
 h4 {
   @include fontFace;
-  color: $neutralDark;
-  font-size: 2.3rem;
+  @include button(hsl(173, 73%, 19%), $neutralLight);
+  border : 1px solid hsla(0, 0%, 0%, .1);
+  background : none;
+  font-size: 1.3rem;
+  line-height: 1em;
 }
 
 p {
@@ -36,7 +39,7 @@ p {
 a {
   @include baseFont;
   font-size: 1.1rem;
-  
+
   color: $neutralLight;
   &:visited {
     color: $neutralLight;

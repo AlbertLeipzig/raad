@@ -21,6 +21,8 @@
   border: $secondaryColor;
   padding: 1.15em 2em;
   color : $mainColor;
+  height: fit-content;
+  width: fit-content;
   &:visited {
     color : $mainColor;
   }
