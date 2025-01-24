@@ -1,0 +1,63 @@
+@use "sass:map";
+@use "../utils/baseValues" as *;
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+
+.section__cta {
+  @include page;
+  background-color: $neutralLight;
+  margin-bottom: 5vh;
+  &-carousel {
+    display: flex;
+    display: none;
+    align-items: center;
+    gap: 0 10vw;
+    &-single {
+      display: flex;
+      align-items: center;
+      div {
+        display: grid;
+        place-items: center;
+        grid-template-areas: "content";
+      }
+      img {
+        grid-area: content;
+        width: 10px;
+      }
+      svg {
+        grid-area: content;
+      }
+      p {
+        @include button(red, black);
+        background: none;
+        border: 1px solid hsla(0, 0%, 50%, 0.2);
+        padding: 0.75em 2em;
+        margin-left: 5px;
+      }
+    }
+  }
+  h2 {
+    margin-top: 35vh;
+    font-size: 2.3rem;
+    text-align: center;
+    color: $accentColor;
+  }
+  p {
+    color: $neutralMedium-dark;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 5vh;
+  }
+  a {
+    @include button($neutralMedium-dark, $neutralMedium-dark);
+    background: none;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5vh auto 0;
+    display: block;
+    width: fit-content;
+    padding: 0.65em 1.75em;
+    border: 1px solid hsla(0, 0%, 50%, 0.2);
+    /* background-color: red; */
+  }
+}

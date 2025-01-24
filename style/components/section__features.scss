@@ -1,0 +1,79 @@
+@use "sass:map";
+@use "../utils/baseValues" as *;
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+.section {
+  &__features {
+    &-single-feature {
+      padding: 0 3vw;
+      margin: 6vh 0;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+        "number title"
+        "description description"
+        "image image"
+        "list list"
+        "cta cta";
+      &-image {
+        grid-area: image;
+      }
+    }
+    h3 {
+      grid-area: title;
+      font-size: 2.5rem;
+      align-self: center;
+      line-height: 1.3em;
+      margin-left: 5vw;
+      span {
+        color: $mainColor;
+      }
+    }
+    p {
+      grid-area: description;
+      color: hsl(40, 2%, 32%);
+      font-size: 1.4rem;
+      max-width: 40ch;
+      line-height: 1.3em;
+      margin: 3vh 0;
+    }
+    ul {
+      grid-area: list;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 5vw;
+        border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+        p {
+          max-width: 60%;
+        }
+        h4 {
+          padding: 0.5em 1.2em;
+          flex-grow: 1;
+        }
+      }
+    }
+    a {
+      grid-area: cta;
+      /* background-color : red; */
+      @include button($neutralLight, $mainColor);
+      margin-top: 4vh;
+    }
+
+    &-number {
+      grid-area: number;
+      display: grid;
+      place-items: center;
+      grid-template-areas: "content";
+      p {
+        grid-area: content;
+        color: $mainColor;
+      }
+      svg {
+        grid-area: content;
+      }
+    }
+  }
+}

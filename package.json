@@ -2,6 +2,7 @@
   "name": "raad",
   "version": "1.0.0",
   "main": "index.js",
+  "type" : "module",
   "scripts": {
     "sass": "sass --watch ./style/index.scss:./style/index.css"
   },

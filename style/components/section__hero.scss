@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "../utils/baseValues" as *;
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+.section {
+  &__hero {
+    @include page;
+    display: grid;
+    grid-template-areas: "content";
+    place-items: center;
+    video {
+      grid-area: content;
+    }
+
+    div {
+      grid-area: content;
+      padding: 0 3vw;
+      position: relative;
+      bottom: 5vh;
+      p {
+        margin-bottom: 7.5vh;
+        line-height: 1.4em;
+        max-width: 75%;
+      }
+      a {
+        @include button;
+      }
+    }
+  }
+}

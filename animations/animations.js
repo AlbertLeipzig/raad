@@ -1,1 +1,1 @@
-console.log(123412341234);
+import "./sectionClaimImage.js";

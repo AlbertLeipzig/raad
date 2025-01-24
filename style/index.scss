@@ -1,2 +1,9 @@
 @use "./utils/utils";
 @use "./components/components";
+
+.test {
+  font-size : 10rem;
+  color : chocolate;
+  position : absolute;
+  inset : 0 0 auto 0;
+}

@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "../utils/baseValues" as *;
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+.section__claim {
+  @include page;
+  background-color: $neutralLight;
+  h2 {
+    display: block;
+    margin: 15vh auto;
+    font-size: 2.4rem;
+    max-width: 21ch;
+    text-align: center;
+    line-height: 1.1em;
+    span {
+      color: $accentColor;
+    }
+  }
+  &-img {
+    position: relative;
+    svg:first-child {
+      position: absolute;
+      /* inset: -5vh auto auto 10vw; */
+    }
+  }
+}
