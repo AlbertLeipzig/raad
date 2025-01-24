@@ -44,6 +44,35 @@
   }
   &__cta {
     @include page;
+    background-color: $neutralLight;
+    &-carousel {
+      display: flex;
+      align-items: center;
+      gap: 0 10vw;
+      &-single {
+        display: flex;
+        align-items: center;
+        div {
+          display: grid;
+          place-items: center;
+          grid-template-areas: "content";
+        }
+        img {
+          grid-area: content;
+          width: 10px;
+        }
+        svg {
+          grid-area: content;
+        }
+        p {
+          @include button(red, black);
+          background: none;
+          border: 1px solid hsla(0, 0%, 50%, 0.2);
+          padding: 0.75em 2em;
+          margin-left: 5px;
+        }
+      }
+    }
   }
   &__use-case-scenarios {
     @include page;
@@ -102,7 +131,7 @@
   &__features {
     &-single-feature {
       padding: 0 3vw;
-      margin : 6vh 0;
+      margin: 6vh 0;
       display: grid;
       grid-template-columns: 20% 80%;
       grid-template-rows: repeat(5, auto);
@@ -141,7 +170,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 0 5vw;
-        border-bottom : 1px solid hsla(0, 0%, 0%, .1);
+        border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
         p {
           max-width: 60%;
         }
@@ -152,7 +181,7 @@
       }
     }
     a {
-      grid-area : cta;
+      grid-area: cta;
       /* background-color : red; */
       @include button($neutralLight, $mainColor);
       margin-top: 4vh;

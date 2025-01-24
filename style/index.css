@@ -351,6 +351,44 @@ header nav ul li a:visited {
 .section__cta {
   min-height: 100vh;
   background-color: hsl(174, 75%, 8%);
+  background-color: hsl(50, 100%, 98%);
+}
+.section__cta-carousel {
+  display: flex;
+  align-items: center;
+  gap: 0 10vw;
+}
+.section__cta-carousel-single {
+  display: flex;
+  align-items: center;
+}
+.section__cta-carousel-single div {
+  display: grid;
+  place-items: center;
+  grid-template-areas: "content";
+}
+.section__cta-carousel-single img {
+  grid-area: content;
+  width: 10px;
+}
+.section__cta-carousel-single svg {
+  grid-area: content;
+}
+.section__cta-carousel-single p {
+  background-color: black;
+  border-radius: 100px;
+  border: black;
+  padding: 1.15em 2em;
+  color: red;
+  height: fit-content;
+  width: fit-content;
+  background: none;
+  border: 1px solid hsla(0, 0%, 50%, 0.2);
+  padding: 0.75em 2em;
+  margin-left: 5px;
+}
+.section__cta-carousel-single p:visited {
+  color: red;
 }
 .section__use-case-scenarios {
   min-height: 100vh;
