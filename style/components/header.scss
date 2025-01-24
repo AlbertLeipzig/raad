@@ -1,13 +1,29 @@
+@use "sass:map";
+@use "../utils/mixins" as *;
+@use "../utils/baseValues" as *;
+@use "../utils/colors" as *;
+
 header {
   position: fixed;
   inset: 0 0 auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3vh 3vw;
+  padding: 1.1vh 3vw;
   nav ul {
     display: flex;
     gap: 1vw;
+    li {
+      &:nth-child(1) {
+        display: none;
+        @media screen and (width > map.get($breakpoints, "tablet")) {
+          display: block;
+        }
+      }
+      a {
+        @include button(hsl(173, 73%, 19%), $neutralLight);
+      }
+    }
   }
 }
 
@@ -15,10 +31,14 @@ header {
   &__branding {
     display: flex;
     align-items: center;
+    font-size: 1.8rem;
+    
     svg {
-      width: 150px;
+      width: 37px;
       aspect-ratio: 1;
       object-fit: cover;
+      height: fit-content;
+      margin-right: 3.5px;
     }
   }
 }

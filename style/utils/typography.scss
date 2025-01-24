@@ -6,7 +6,9 @@ h1 {
   @include fontFace;
   color: $neutralLight;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 3.3rem;
+  max-width: 15ch;
+  margin-bottom: 2vh;
 }
 
 h2 {
@@ -23,12 +25,25 @@ h3 {
 
 h4 {
   @include fontFace;
-  color: $neutralDark;
-  font-size: 2.3rem;
+  @include button(hsl(173, 73%, 19%), $neutralLight);
+  border : 1px solid hsla(0, 0%, 0%, .1);
+  background : none;
+  font-size: 1.3rem;
+  line-height: 1em;
 }
 
 p {
   @include baseFont;
+}
+
+a {
+  @include baseFont;
+  font-size: 1.1rem;
+
+  color: $neutralLight;
+  &:visited {
+    color: $neutralLight;
+  }
 }
 
 li {

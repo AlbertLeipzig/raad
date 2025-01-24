@@ -1,8 +1,10 @@
 $neutralLight: hsl(50, 100%, 98%);
+$neutralLight--transparent: hsla(50, 100%, 98%, .25);
 $neutralMedium-light: hsl(50, 2%, 49%);
 $neutralMedium-dark: hsl(174, 75%, 8%);
 $neutralDark: hsl(174, 75%, 8%);
 $mainColor: hsl(173, 56%, 23%);
 $mainColor--transparent: hsl(171, 25%, 85%);
 $accentColor: hsl(16, 97%, 50%);
-$color333: #422d4a;
+
+$test : hsl(173, 73%, 19%);
