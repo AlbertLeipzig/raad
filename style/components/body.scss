@@ -1,3 +1,6 @@
+@use "../utils/colors" as *;
 main {
     padding: 0 2vw;
+    background-color : $neutralLight;
+
 }

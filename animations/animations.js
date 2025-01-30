@@ -1,1 +1,2 @@
-import "./sectionClaimImage.js";
+/* import "./sectionClaimImage.js"; */
+import { ctaAnimation } from "./ctaAnimation.js";

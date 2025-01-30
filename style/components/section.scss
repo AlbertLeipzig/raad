@@ -2,6 +2,7 @@
 @use "../utils/baseValues" as *;
 @use "../utils/colors" as *;
 @use "../utils/mixins" as *;
+
 .section {
   &__hero {
     @include page;

@@ -10,20 +10,34 @@
   letter-spacing: 0.1em;
 }
 
-@mixin page ($backgroundColor : $neutralDark) {
+@mixin page($backgroundColor: $neutralDark) {
   min-height: 100vh;
-  background-color : $backgroundColor;
+  background-color: $backgroundColor;
 }
 
-@mixin button($mainColor: $neutralDark, $secondaryColor : $neutralLight) {
+@mixin button($mainColor: $neutralDark, $secondaryColor: $neutralLight) {
   background-color: $secondaryColor;
   border-radius: 100px;
   border: $secondaryColor;
   padding: 1.15em 2em;
-  color : $mainColor;
+  color: $mainColor;
   height: fit-content;
   width: fit-content;
   &:visited {
-    color : $mainColor;
+    color: $mainColor;
   }
+}
+
+@mixin line($direction: "vertical") {
+  background-color: $neutralLight--transparent;
+  background-color: crimson;
+  @if ($direction == "horizontal") {
+    height: 20px;
+    width: 1px;
+  }
+  @if($direction == "vertical"){
+    height: 1px;
+    width: 20px;
+  }
+  /* background-color: hsla(0, 0%, 99%, 0.5); */
 }

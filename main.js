@@ -1,20 +1,13 @@
-/* import "./animations/animations.js"; */
-const testParent = document.querySelector(".test-parent");
+const section = document.querySelector(".section__cta");
+import "./animations/animations.js";
+import { ctaAnimation } from "./animations/ctaAnimation.js";
+import { carouselItem } from "./animations/ctaAnimation.js";
 
-const testChild = () => {
-  const element = document.createElement("div");
-  element.className = "test-child";
-  return element;
-};
+/* import { grid } from "./grids.js"; */
 
-const line = (direction) => {
-  const element = document.createElement("div");
-  element.className = `test-${direction}-line`;
+/* grid.mobile() */
 
-  return element;
-};
+/* console.clear() */
 
-Array.from({ length: 1000 }).forEach((_, i) => {
-  testParent.appendChild(line("vertical"));
-  testParent.appendChild(line("horizontal"));
-});
+/* ctaAnimation() */
+section.appendChild(carouselItem("hurricane"));

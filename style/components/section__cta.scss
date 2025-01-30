@@ -9,7 +9,6 @@
   margin-bottom: 5vh;
   &-carousel {
     display: flex;
-    display: none;
     align-items: center;
     gap: 0 10vw;
     &-single {
@@ -31,8 +30,9 @@
         @include button(red, black);
         background: none;
         border: 1px solid hsla(0, 0%, 50%, 0.2);
-        padding: 0.75em 2em;
+        padding: 0.5em 2em;
         margin-left: 5px;
+        align-self: start;
       }
     }
   }
@@ -41,12 +41,16 @@
     font-size: 2.3rem;
     text-align: center;
     color: $accentColor;
+    margin-bottom: 5vh;
   }
   p {
     color: $neutralMedium-dark;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
-    margin-top: 5vh;
+    color : red;
+    &:last-of-type{
+      color: $neutralDark;
+    }
   }
   a {
     @include button($neutralMedium-dark, $neutralMedium-dark);

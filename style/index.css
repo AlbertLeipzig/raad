@@ -247,6 +247,43 @@ footer p {
   color: hsla(50, 100%, 98%, 0.25);
 }
 
+/* .test {
+  &-parent {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    justify-content: center;
+    align-items: center;
+  }
+} */
+/* background-color: hsla(0, 0%, 99%, 0.5); */
+.vertical-line {
+  background-color: hsla(50, 100%, 98%, 0.25);
+  background-color: crimson;
+  height: 1px;
+  width: 20px;
+  /* background-color: hsla(0, 0%, 99%, 0.5); */
+  /*   height: 5px;
+    width: 1px;
+    background-color: $neutralLight--transparent; */
+  position: relative;
+  top: 10px;
+  margin-top: 0;
+}
+
+.horizontal-line {
+  background-color: hsla(50, 100%, 98%, 0.25);
+  background-color: crimson;
+  height: 20px;
+  width: 1px;
+  /* background-color: hsla(0, 0%, 99%, 0.5); */
+  /*   height: 1px;
+  width: 5px;
+  background-color: $neutralLight--transparent; */
+  margin-left: 2.5px;
+}
+
 header {
   position: fixed;
   inset: 0 0 auto 0;
@@ -350,7 +387,6 @@ header nav ul li a:visited {
 }
 .section__cta-carousel {
   display: flex;
-  display: none;
   align-items: center;
   gap: 0 10vw;
 }
@@ -380,8 +416,9 @@ header nav ul li a:visited {
   width: fit-content;
   background: none;
   border: 1px solid hsla(0, 0%, 50%, 0.2);
-  padding: 0.75em 2em;
+  padding: 0.5em 2em;
   margin-left: 5px;
+  align-self: start;
 }
 .section__cta-carousel-single p:visited {
   color: red;
@@ -391,12 +428,16 @@ header nav ul li a:visited {
   font-size: 2.3rem;
   text-align: center;
   color: hsl(16, 97%, 50%);
+  margin-bottom: 5vh;
 }
 .section__cta p {
   color: hsl(174, 75%, 8%);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
-  margin-top: 5vh;
+  color: red;
+}
+.section__cta p:last-of-type {
+  color: hsl(174, 75%, 8%);
 }
 .section__cta a {
   background-color: hsl(174, 75%, 8%);
@@ -604,7 +645,6 @@ header nav ul li a:visited {
 }
 .section__use-case-scenarios__list-icon {
   width: fit-content;
-  position: relative;
   align-items: start;
   margin-right: 5vw;
 }
@@ -631,38 +671,10 @@ video {
   object-fit: cover;
 }
 
-.test {
-  /* &-child {
-    width: 100px;
-    aspect-ratio: 1;
-    border: 1px white dashed;
-  } */
-}
-.test-parent {
-  min-height: 100vh;
-  background-color: navy;
-  /* display: grid;
-  grid-template-columns: repeat(100, 10px);
-  grid-template-rows: repeat(100, 10px); */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 10px;
-  justify-content: center;
-  align-items: center;
-}
-.test-vertical-line {
-  height: 5px;
-  width: 1px;
-  background-color: hsla(0, 0%, 99%, 0.5);
-  position: relative;
-  top: 10px;
-  margin-top: 0;
-}
-.test-horizontal-line {
-  height: 1px;
-  width: 5px;
-  background-color: hsla(0, 0%, 99%, 0.5);
-  margin-left: 2.5px;
-}
+/* .vertical-line {
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+} */
 
 /*# sourceMappingURL=index.css.map */
